@@ -1,0 +1,11 @@
+.venv/
+data/
+*.ipynb
+.git/
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+logs/
+.python-version
+eda.ipynb
+modeling.ipynb
