@@ -1,0 +1,63 @@
+{
+ "windows": [
+  "20d",
+  "30d",
+  "6m"
+ ],
+ "risk_tiers": {
+  "20d": {
+   "medium": 0.06773952139340106,
+   "high": 0.20865450577465203
+  },
+  "30d": {
+   "medium": 0.0974487668879668,
+   "high": 0.2614615137797624
+  },
+  "6m": {
+   "medium": 0.29890248634933586,
+   "high": 0.7286333271032528
+  }
+ },
+ "mean_cost_per_incident": 3534.441159077469,
+ "cost_map": {
+  "Fall": 3500,
+  "Wound": 4000,
+  "Altercation": 2500,
+  "Other": 4333
+ },
+ "train_positive_rate": {
+  "20d": 0.07152317880794702,
+  "30d": 0.0913907284768212,
+  "6m": 0.18609271523178808
+ },
+ "launch_pr_auc": {
+  "20d": 0.36456070799281143,
+  "30d": 0.34169480805129965,
+  "6m": 0.35864243618167424
+ },
+ "pr_auc_floor": {
+  "20d": 0.218,
+  "30d": 0.2165,
+  "6m": 0.2724
+ },
+ "stage3_features": [
+  "age_at_incident",
+  "prior_incident_count",
+  "prior_fall_count",
+  "prior_wound_count",
+  "prior_altercation_count",
+  "dx_count",
+  "dx_chap_M",
+  "dx_chap_L",
+  "dx_chap_F",
+  "dx_chap_G",
+  "dx_chap_N",
+  "dx_chap_E",
+  "dx_chap_I",
+  "prior_admission_count",
+  "prior_transfer_count",
+  "order_count",
+  "need_count",
+  "need_fall_count"
+ ]
+}

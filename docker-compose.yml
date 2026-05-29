@@ -1,0 +1,14 @@
+services:
+  api:
+    build: .
+    image: tricura-risk-api:latest
+    container_name: tricura-risk-api
+    ports:
+      - "8000:8000"
+    environment:
+      MODEL_VERSION: "2024-snapshot-v1"
+      PRAUC_FLOOR: "0.25"
+    volumes:
+      # persist the prediction log outside the container for audit / offline drift analysis
+      - ./logs:/app/logs
+    restart: unless-stopped
